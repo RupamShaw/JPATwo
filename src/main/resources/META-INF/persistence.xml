@@ -10,11 +10,17 @@
         org.datanucleus.api.jpa.PersistenceProviderImpl
       </provider>
 		<class>org.model.JPATes</class>
+		<class>org.model.Student</class>
       <exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<properties>
-			<property name="datanucleus.NontransactionalRead" value="true" />
-			<property name="datanucleus.NontransactionalWrite" value="true" />
-			<property name="datanucleus.ConnectionURL" value="appengine" />
+			<property name="javax.persistence.query.timeout" value="5000"/>
+            <property name="datanucleus.appengine.datastoreReadConsistency" value="STRONG"/>
+           <!--  <property name="datanucleus.appengine.datastoreEnableXGTransactions" value="true"/>
+           -->  <property name="datanucleus.datastoreWriteTimeout" value="5000"/>
+            <property name="datanucleus.NontransactionalRead" value="true"/>
+            <property name="datanucleus.NontransactionalWrite" value="true"/>
+            <property name="datanucleus.ConnectionURL" value="appengine"/>
+			 <property name="datanucleus.singletonEMFForName" value="true"/>
 		</properties>
 	</persistence-unit>
 

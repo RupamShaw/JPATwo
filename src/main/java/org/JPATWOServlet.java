@@ -1,6 +1,7 @@
 package org;
 
 import java.io.IOException;
+import java.util.Date;
 
 import javax.jdo.JDOEnhancer;
 import javax.jdo.JDOHelper;
@@ -24,8 +25,8 @@ public class JPATWOServlet extends HttpServlet {
 			EntityManagerFactory emf = Persistence.createEntityManagerFactory("transactions-optional");
 			 EntityManager em = emf.createEntityManager();
         EntityTransaction tx = null;
-  
-        JPATes a1 = new JPATes("myPre", "mySur");
+        Date created=new Date();
+		JPATes a1 = new JPATes("myPre", "mySur", created);
 
     tx = em.getTransaction();
         tx.begin(); 
