@@ -11,7 +11,7 @@ import org.model.ErrorMessage;
 // This class intentionally doesn't have the @Provider annotation.
 // It has been disabled in order to try out other ways of throwing exceptions in JAX-RS
 
-// @Provider
+ @Provider
 public class GenericExceptionMapper implements ExceptionMapper<Throwable> {
 
 	@Override

@@ -8,7 +8,7 @@ import javax.ws.rs.ext.Provider;
 import org.model.ErrorMessage;
 
 
-//@Provider
+@Provider
 public class DataNotFoundExceptionMapper implements ExceptionMapper<DataNotFoundException> {
 
 	@Override
