@@ -23,10 +23,10 @@
    
     <p><a href="/webapi/studentJerseyJPA">Jersey RESTful Web Application-JAX-RS! student resource for Datastore without dao and services by JPA in google web app server</a>
     
-     
+   <!--   
      <h2>Test Tomcat</h2>
     <p><a href="/JPATWO/jpatest">test Jpa Tomcat Plain Servlet in google app server </a>
     <p><a href="/JPATWO/jpatwo">test  for tomcat not work as it contains datastore</a>
-    
+     -->
 </body>
 </html>
