@@ -33,7 +33,7 @@ public class StudentResource {
 	}
 
 	String className = this.getClass().getSimpleName();
-
+	
 	@GET
 	public List<Student> getStudents() {
 		String methodName = new Object() {

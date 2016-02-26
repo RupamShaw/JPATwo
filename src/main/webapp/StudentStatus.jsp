@@ -26,7 +26,7 @@ function setaction(sel) {
 <H1>Letting Only Numbers Pass to a  Student ID</H1>
 <HR>
 <FORM name ="addreceivable" onSubmit="setaction()"  method="get">
-Enter any positive integer for Student ID: <INPUT TYPE="text" NAME="txtStudentID" id="txtStudentID"
+Enter any positive number for Student ID: <INPUT TYPE="text" NAME="txtStudentID" id="txtStudentID"
     onKeyPress="return checkIt(event)">
 </FORM>
 
